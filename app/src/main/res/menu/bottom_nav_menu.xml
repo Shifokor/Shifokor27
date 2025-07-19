@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_documents"
+        android:icon="@drawable/ic_document"
+        android:title="Tibbiy hujjatlar" />
+    <item
+        android:id="@+id/nav_jobs"
+        android:icon="@drawable/ic_jobs"
+        android:title="Ish o‘rinlari" />
+
+
+    <item
+        android:id="@+id/nav_reting"
+        android:icon="@drawable/ic_rating"
+        android:title="Reyting"/>
+    <item
+        android:id="@+id/nav_courses"
+        android:icon="@drawable/ic_courses"
+        android:title="Kurslar" />
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/profil_ic"
+        android:title="Profil" />
+</menu>

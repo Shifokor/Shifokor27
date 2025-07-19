@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvAnalizTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Klinik va labarator tekshiruvlar, instrumental diagnostika usullari"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvAnalizDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Klinik va laborator tekshiruvlar— bu bemorning sog‘lig‘ini baholash uchun o‘tkaziladigan tekshiruvlar majmuasidir.
+        Klinik tahlillar — umumiy qon, siydik, va bemorni ko‘rikdan o‘tkazish natijalariga asoslanadi.
+        Laborator tahlillar — qon, siydik, va boshqa biologik suyuqliklarda biokimyoviy, immunologik va mikrobiologik ko‘rsatkichlarni aniqlash.
+        Ular tashxis qo‘yish, davolash va kasallikning kechishini nazorat qilishda muhim ahamiyatga ega.
+
+        Instrumental diagnostika — bu maxsus qurilmalar yordamida ichki a’zolarni tekshirish usullaridir.
+        Bular: UZİ — ultratovush orqali, Rentgen — nurlanish bilan, KT — qatlamli tasvir, MRT — magnit maydoni orqali tekshiruv.
+        Ular kasallikni aniq aniqlashda yordam beradi.
+"
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp" />
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ortga"
+            android:layout_marginTop="24dp" />
+    </LinearLayout>
+</ScrollView>

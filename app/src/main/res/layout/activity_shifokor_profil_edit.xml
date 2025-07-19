@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F8F9FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Profil rasmi -->
+        <ImageView
+            android:id="@+id/imgDoctor"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_launcher_foreground"
+            android:background="@drawable/circle_bg"
+            android:scaleType="centerCrop"
+            android:contentDescription="Profil rasmi" />
+
+        <!-- Rasm yuklash tugmasi -->
+        <Button
+            android:id="@+id/btnUploadImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📷 Rasm yuklash"
+            android:layout_marginTop="8dp"
+            android:textSize="14sp" />
+
+        <!-- Ism -->
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:hint="Ism"
+            android:inputType="textPersonName"
+            android:background="@android:drawable/edit_text"
+            android:padding="12dp" />
+
+        <!-- Familiya -->
+        <EditText
+            android:id="@+id/etSurname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="Familiya"
+            android:inputType="textPersonName"
+            android:background="@android:drawable/edit_text"
+            android:padding="12dp" />
+
+        <!-- Otasining ismi -->
+        <EditText
+            android:id="@+id/etFatherName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="Otasining ismi"
+            android:inputType="textPersonName"
+            android:background="@android:drawable/edit_text"
+            android:padding="12dp" />
+
+        <!-- Telefon raqam -->
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="Telefon raqam (+998)"
+            android:inputType="phone"
+            android:background="@android:drawable/edit_text"
+            android:padding="12dp" />
+
+        <!-- Mutaxassislik -->
+
+        <AutoCompleteTextView
+            android:id="@+id/spinnerSpecialty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mutahasislikni tanlang"
+            android:layout_marginTop="4dp" />
+
+        <!-- Malaka toifasi -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Malaka toifasi"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp" />
+
+        <Spinner
+            android:id="@+id/spinnerCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp" />
+        <Button
+            android:id="@+id/btnUploadCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📄 Malaka diplomini yuklash"
+            android:layout_marginTop="4dp"
+            android:textSize="14sp" />
+
+        <!-- Ish tajribasi -->
+        <EditText
+            android:id="@+id/etExperience"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="Ish tajribasi (yillarda)"
+            android:inputType="number"
+            android:background="@android:drawable/edit_text"
+            android:padding="12dp" />
+
+        <!-- Ish joyi -->
+        <EditText
+            android:id="@+id/etWorkplace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="Ish joyi"
+            android:inputType="text"
+            android:background="@android:drawable/edit_text"
+            android:padding="12dp" />
+
+        <!-- Bakalavr -->
+        <AutoCompleteTextView
+            android:id="@+id/actvBakalavr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="Bakalavr (O‘qigan joyi)"
+            android:inputType="text"
+            android:background="@android:drawable/edit_text"
+            android:padding="12dp" />
+        <Button
+            android:id="@+id/btnUploadBakalavr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📄 Bakalavr diplomini yuklash"
+            android:layout_marginTop="4dp"
+            android:textSize="14sp" />
+
+        <!-- Magistratura -->
+        <AutoCompleteTextView
+            android:id="@+id/actvMagistr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="Magistratura (O‘qigan joyi)"
+            android:inputType="text"
+            android:background="@android:drawable/edit_text"
+            android:padding="12dp" />
+        <Button
+            android:id="@+id/btnUploadMagistr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📄 Magistratura diplomini yuklash"
+            android:layout_marginTop="4dp"
+            android:textSize="14sp" />
+
+        <!-- Til darajasi -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Qaysi tillarni bilasiz va darajasi"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:textColor="#000000" />
+
+        <LinearLayout
+            android:id="@+id/languageContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btnAddLanguage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+ Til qo‘shish"
+            android:layout_marginTop="8dp"
+            android:textColor="#007AFF"
+            android:background="@android:color/transparent"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnUploadLanguage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📄 Til sertifikatini yuklash"
+            android:layout_marginTop="4dp"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnSaveProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Saqlash"
+            android:backgroundTint="#007AFF"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+</ScrollView>

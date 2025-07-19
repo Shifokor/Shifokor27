@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8"
+    android:padding="24dp">
+
+    <!-- Til tanlash: Yuqoridagi bayroqlar -->
+    <LinearLayout
+        android:id="@+id/langSelector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/flagUz"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/flag_uz"
+            android:layout_marginEnd="8dp"
+            android:padding="6dp" />
+
+        <ImageView
+            android:id="@+id/flagRu"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/flag_ru"
+            android:padding="6dp" />
+    </LinearLayout>
+
+    <!-- Markazdagi matn -->
+    <TextView
+        android:id="@+id/selectText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Foydalanuvchi turini tanlang"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:textColor="#333333" />
+
+    <!-- Shifokor tugmasi -->
+    <Button
+        android:id="@+id/btnDoctor"
+        android:layout_below="@id/selectText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="👨‍⚕️ Shifokor"
+        android:backgroundTint="#1E90FF"
+        android:textColor="#FFFFFF" />
+
+    <!-- Foydalanuvchi tugmasi -->
+    <Button
+        android:id="@+id/btnUser"
+        android:layout_below="@id/btnDoctor"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="👤 Foydalanuvchi"
+        android:backgroundTint="#32CD32"
+        android:textColor="#FFFFFF" />
+</RelativeLayout>
